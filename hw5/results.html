@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 20px;
+        }
+        .results-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ff073a;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ff073a;
+            color: white;
+        }
+        a {
+            text-decoration: none;
+            color: #ff073a;
+        }
+    </style>
+</head>
+<body>
+    <div class="results-container">
+        <h1>Search Results for "{{ query }}"</h1>
+        <form action="/search" method="get">
+            <input type="text" name="query" value="{{ query }}" required>
+            <button type="submit">Requery</button>
+        </form>
+        <table>
+            <tr>
+                <th>Document Name</th>
+                <th>Score</th>
+                <th>Matching Terms</th>
+            </tr>
+            {% for doc_name, score, matching_terms in results %}
+            <tr>
+                <td><a href="/document/{{ doc_name }}" target="_blank">{{ doc_name }}</a></td>
+                <td>{{ score }}</td>
+                <td>{{ ', '.join(matching_terms) }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/">Back to Home</a>
+    </div>
+</body>
+</html>

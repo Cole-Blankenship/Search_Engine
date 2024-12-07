@@ -1,0 +1,26 @@
+Script started on 2024-12-06 15:35:45-0600
+groups: cannot find name for group ID 762800513
+]0;sgauch@turing.csce.uark.edu: /home/sgauch/public_html/45503/F24/hw/hw4_soln_pysgauch@turing:~/public_html/45503/F24/hw/hw4_soln_py$ ./hw4.sh index tinyfiles t inyout
+Total unique terms in the collection: 0
+Total number of postings in the document collection: 0
+Total number of tokens in the document collection: 0
+Real time: 0.48 seconds
+User time (CPU): 0.44 seconds
+
+Generated files:
+total 8
+-rw-rw-r-- 1 sgauch sgauch   7 Dec  6 15:35 config.txt
+-rw-rw-r-- 1 sgauch sgauch 714 Dec  6 15:35 dict
+-rw-rw-r-- 1 sgauch sgauch   0 Dec  6 15:35 map
+-rw-rw-r-- 1 sgauch sgauch   0 Dec  6 15:35 post
+
+File sizes (line counts):
+  1 tinyout/config.txt
+ 21 tinyout/dict
+  0 tinyout/map
+  0 tinyout/post
+ 22 total
+]0;sgauch@turing.csce.uark.edu: /home/sgauch/public_html/45503/F24/hw/hw4_soln_pysgauch@turing:~/public_html/45503/F24/hw/hw4_soln_py$ ./[K[Kexit
+exit
+
+Script done on 2024-12-06 15:36:31-0600
